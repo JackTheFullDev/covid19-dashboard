@@ -31,8 +31,8 @@ export const MyTable = ({Countries}) => {
         sortMode="multiple"
         filters={filter}
         paginator
-        rows={25}
-        filterDisplay="row"
+        rows={10}
+       // filterDisplay="row"
         emptyMessage="No country found."
       >
         <Column field="Country" header="Country Name" sortable></Column>

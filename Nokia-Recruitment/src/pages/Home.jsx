@@ -2,6 +2,7 @@ import { MyChart } from '../Components/MyChart'
 import { MyTable } from '../Components/MyTable'
 import { GlobalData } from '../Components/GlobalData'
 import { useState,useEffect } from 'react'
+import '../style/Home.css'
 
 export const  Home = () =>
 {
@@ -16,10 +17,16 @@ export const  Home = () =>
    
     console.log(Global)
     return(
-        <section className='home-container'>
-        <GlobalData Global={Global}></GlobalData> 
-       <MyChart Countries={Countries}></MyChart> 
-       <MyTable Countries={Countries}></MyTable> 
+        <section className='home-section'>
+            
+            <div className='home-component'>
+            <GlobalData Global={Global}/>
+            </div>
+            <div className='home-component'>  <MyChart Countries={Countries}></MyChart>  </div>
+            <div className='home-component'> <MyTable Countries={Countries}/></div> 
+            
+            {/* <MyChart Countries={Countries}></MyChart> //here add scroll
+            <MyTable Countries={Countries}></MyTable> */}
         </section>
     )
 }

@@ -6,7 +6,7 @@ export const MyChart= ({Countries}) =>
   
     return(
      
-      <BarChart height={1000}  width={500} data={Countries} layout="vertical">
+      <BarChart  height={1000}  width={500} data={Countries} layout="vertical">
         <CartesianGrid strokeDasharray="3 3" />
         <YAxis dataKey="Country" type="category" />
         <XAxis />
