@@ -1,0 +1,43 @@
+.p-datatable ,.p-component ,.p-sortable-column,.p-datatable-tbody tr,.p-paginator 
+{
+    background-color: transparent!important;
+    color: white!important;
+}
+.p-link 
+{
+    color:#0f0f0fd2!important;
+}
+.p-link:hover , .p-link:focus
+{
+    color: black!important;
+}
+.p-datatable svg
+{
+    color: white!important;
+}
+.table-section
+{
+    max-height: 100%;
+    overflow-y: scroll;
+}
+.p-paginator
+{
+    border:none;
+}
+.p-paginator-bottom button:hover svg
+{
+    color: black!important;
+}
+::-webkit-scrollbar {
+    width: 20px;
+    
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f125;
+    border-radius: 0px 20px 20px 0px;
+  
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e3053b6;
+    border-radius: 0px 20px 20px 0px;
+  }

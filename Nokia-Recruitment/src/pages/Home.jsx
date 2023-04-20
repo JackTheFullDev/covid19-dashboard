@@ -24,7 +24,8 @@ export const  Home = () =>
             <GlobalData Global={Global}/>
             </div>
             <div className='home-component'>  <MyChart Countries={Countries}></MyChart>  </div>
-            <div className='home-component'> <MyTable Countries={Countries}/></div> 
+            <div className='home-component'> 
+            <MyTable Countries={Countries}/></div> 
             
             {/* <MyChart Countries={Countries}></MyChart> //here add scroll
             <MyTable Countries={Countries}></MyTable> */}

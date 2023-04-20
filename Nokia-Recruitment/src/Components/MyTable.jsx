@@ -6,6 +6,7 @@ import "primereact/resources/primereact.min.css";
 import { InputText } from "primereact/inputtext";
 import { FilterMatchMode } from "primereact/api";
 import { useState } from "react";
+import '../style/Table.css'
 
 export const MyTable = ({Countries}) => {
   const [filter, setFilter] = useState({});
@@ -14,7 +15,8 @@ export const MyTable = ({Countries}) => {
    })
   return (
     <section className="table-section">
-      <InputText
+
+<InputText
         onInput={(e) =>
           setFilter({
             global: {
@@ -24,9 +26,10 @@ export const MyTable = ({Countries}) => {
           })
         }
         placeholder="input data"
+       
       />
-
-      <DataTable
+     <DataTable
+      className="data-table"
         value={Countries}
         sortMode="multiple"
         filters={filter}

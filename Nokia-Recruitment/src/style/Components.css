@@ -56,7 +56,7 @@ h2
 }
 #global-total-confirmed
 {
-    color:#9DD9D2;
+    color:#3BB273;
 }
 #global-total-deaths
 {
@@ -64,8 +64,3 @@ h2
 }
 
 
-.table-section
-{
-    max-height: 100%;
-    overflow-y: scroll;
-}
