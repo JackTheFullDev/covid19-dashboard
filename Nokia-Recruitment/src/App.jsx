@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import './style/apiContainer.css'
 
-import { LineChart, Line } from 'recharts';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 function App() {
@@ -29,8 +28,17 @@ function App() {
     
   const {Global,Countries,Date}=apidata || {};
  
+ 
   return (
     <div className="App">
+      <div className='global-data'>
+        <h1>Global Info for date: {Global.Date}</h1>
+        <h2>New Confirmed:{Global.NewConfirmed}</h2>
+        <h2>New Deaths:{Global.NewDeaths}</h2>
+        <h2>New Recovered:{Global.NewRecovered}</h2>
+        <h2>Total Confirmed:{Global.TotalConfirmed}</h2>
+        <h2>Total Recovered:{Global.TotalRecovered}</h2>
+      </div>
       <h1>Enter country</h1>
        <BarChart width={1000} height={400} data={Countries}>
       <CartesianGrid strokeDasharray="3 3" />
