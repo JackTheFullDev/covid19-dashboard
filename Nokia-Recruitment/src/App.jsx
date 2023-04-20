@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import './style/apiContainer.css'
+
 
 //routes
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import { Home } from './pages/Home'
+import { PageNotFound } from './pages/PageNotFound'
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}></Route>
+      <Route path='*' element={<PageNotFound/>}></Route>
+
     </Routes>
     </BrowserRouter>
     </div>
