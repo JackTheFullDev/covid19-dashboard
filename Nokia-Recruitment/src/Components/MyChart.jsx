@@ -16,9 +16,9 @@ export const MyChart= ({Countries}) =>
           labels: allCountries,
           datasets: [
               {
-                  label: 'dead',
-                  backgroundColor: "red",
-                  borderColor: "red",
+                  label: 'deads',
+                  backgroundColor: "blue",
+                  borderColor: "blue",
                   data: TotalDeaths
               },
              
