@@ -13,7 +13,7 @@ export const MyTable = ({Countries}) => {
     global:{value:null,matchMode:FilterMatchMode.CONTAINS},
    })
   return (
-    <section>
+    <section className="table-section">
       <InputText
         onInput={(e) =>
           setFilter({
@@ -36,14 +36,14 @@ export const MyTable = ({Countries}) => {
         emptyMessage="No country found."
       >
         <Column field="Country" header="Country Name" sortable></Column>
-        <Column field="NewConfirmed" header="TotalConfirmed" sortable></Column>
-        <Column field="NewDeaths" header="TotalConfirmed" sortable></Column>
+        <Column field="NewConfirmed" header="NewConfirmed" sortable></Column>
+        <Column field="NewDeaths" header="NewDeaths" sortable></Column>
         <Column
           field="TotalConfirmed"
           header="TotalConfirmed"
           sortable
         ></Column>
-        <Column field="TotalDeaths" header="TotalConfirmed" sortable></Column>
+        <Column field="TotalDeaths" header="TotalDeaths" sortable></Column>
       </DataTable>
     </section>
   );

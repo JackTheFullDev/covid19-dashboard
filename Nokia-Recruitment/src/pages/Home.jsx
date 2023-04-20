@@ -15,7 +15,6 @@ export const  Home = () =>
    
     const {Global,Countries,Date}=apidata || {};
    
-    console.log(Global)
     return(
         <section className='home-section'>
             

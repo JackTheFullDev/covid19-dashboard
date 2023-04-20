@@ -13,3 +13,19 @@
 h1,h2{
     margin: 0;
 }
+.mycharts-section
+{
+    
+    max-height:100%;
+    overflow-y: scroll;
+    
+}
+.mycharts-section canvas
+{
+    min-height: 400px!important;
+}
+.table-section
+{
+    max-height: 100%;
+    overflow-y: scroll;
+}
