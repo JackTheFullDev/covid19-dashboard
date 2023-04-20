@@ -11,6 +11,7 @@ export const MyChart= ({Countries}) =>
        const allCountries =Countries?.map(country => country.Country);
        const TotalDeaths =Countries?.map(country => country.TotalDeaths);
        const TotalConfirmed =Countries?.map(country => country.TotalConfirmed);
+       const newDeaths =Countries?.map(country => country.NewDeaths);
        
       const data = {
           labels: allCountries,
@@ -19,15 +20,14 @@ export const MyChart= ({Countries}) =>
                   label: 'deads',
                   backgroundColor: "blue",
                   borderColor: "blue",
-                  data: TotalDeaths
+                  data: TotalConfirmed
               },
              
           ]
       };
       const options = {
           indexAxis: 'y',
-          maintainAspectRatio: false,
-          aspectRatio: 0.06,
+          aspectRatio: 0.09,
           plugins: {
               legend: {
                   labels: {

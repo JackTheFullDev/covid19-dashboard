@@ -3,27 +3,67 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: start;
-    gap: 10px;
+    align-items: center;
     margin: 20px;
-    text-align: start;
+    text-align: center;
+    gap:10px;
+   
 }
 
-
-h1,h2{
+*
+{
     margin: 0;
 }
+h2
+{
+    font-size: 30px;
+}
+.text-content
+{
+    cursor: pointer;
+    text-align: center;
+    
+}
+.text-content svg
+{
+    vertical-align: middle;
+}
+
+.text-content:hover
+{
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
 .mycharts-section
 {
     
     max-height:100%;
     overflow-y: scroll;
-    
+   
 }
-.mycharts-section canvas
+#global-date-date
 {
-    min-height: 400px!important;
+    color: rgba(255, 255, 255, 0.726);
 }
+#global-new-confirmed
+{
+    color:#FF8811;
+}
+#global-new-deaths
+{
+    color: red;
+}
+#global-total-confirmed
+{
+    color:#9DD9D2;
+}
+#global-total-deaths
+{
+    color:#090809;
+}
+
+
 .table-section
 {
     max-height: 100%;

@@ -9,12 +9,14 @@ export const  Home = () =>
     const [apidata,setApiData]= useState()
     useEffect(()=>
     {
-      fetch("https://api.covid19api.com/summary").then(res=>res.json()).then(data=>setApiData(data));
+      const url='https://api.covid19api.com/summary';
+      fetch(url).then(res=>res.json()).then(data=>setApiData(data));
      
     },[])
    
     const {Global,Countries,Date}=apidata || {};
    
+    console.log(apidata)
     return(
         <section className='home-section'>
             
