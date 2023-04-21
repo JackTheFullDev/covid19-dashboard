@@ -2,20 +2,19 @@ import { MyChart } from '../Components/MyChart'
 import { MyTable } from '../Components/MyTable'
 import { GlobalData } from '../Components/GlobalData'
 import { useState,useEffect } from 'react'
-import {MdTableChart} from 'react-icons/md'
 import '../style/Home.css'
 
-export const  Home = () =>
+export const  Dashbord = () =>
 {
     const [apidata,setApiData]= useState()
     useEffect(()=>
     {
       const url='https://api.covid19api.com/summary';
-     // fetch(url).then(res=>res.json()).then(data=>setApiData(data));
+      fetch(url).then(res=>res.json()).then(data=>setApiData(data));
      
-    },[apidata])
+    },[])
    
-    const {Global,Countries,Date}=apidata || {};
+    const {Global,Countries}=apidata || {};
    
 
     return(

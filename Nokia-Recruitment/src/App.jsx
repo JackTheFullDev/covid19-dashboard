@@ -6,6 +6,7 @@ import './App.css'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { PageNotFound } from './pages/PageNotFound'
+import { Dashbord } from './pages/Dashbord'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}></Route>
+      <Route path='/Dashbord' element={<Dashbord/>}></Route>
       <Route path='*' element={<PageNotFound/>}></Route>
     </Routes>
     </BrowserRouter>
