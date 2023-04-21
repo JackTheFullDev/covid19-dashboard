@@ -10,7 +10,7 @@ export const  Dashboard = () =>
     useEffect(()=>
     {
       const url='https://api.covid19api.com/summary';
-      fetch(url).then(res=>res.json()).then(data=>setApiData(data));
+     // fetch(url).then(res=>res.json()).then(data=>setApiData(data));
      
     },[])
    

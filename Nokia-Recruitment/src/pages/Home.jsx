@@ -10,7 +10,7 @@ export const Home = () => {
     <section className="home-container">
       <h1>Welcom to Covid-19 date</h1>
       <div className="home-components-section">
-        <Link to="/" className="home-component">
+        <Link to="/table" className="home-component">
           <MdTableChart />
         </Link>
         <Link to="/" className="home-component">
