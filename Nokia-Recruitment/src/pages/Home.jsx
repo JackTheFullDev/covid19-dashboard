@@ -10,7 +10,7 @@ export const  Home = () =>
     useEffect(()=>
     {
       const url='https://api.covid19api.com/summary';
-      fetch(url).then(res=>res.json()).then(data=>setApiData(data));
+     // fetch(url).then(res=>res.json()).then(data=>setApiData(data));
      
     },[])
    
@@ -23,7 +23,11 @@ export const  Home = () =>
             <div className='home-component'>
             <GlobalData Global={Global}/>
             </div>
-            <div className='home-component'>  <MyChart Countries={Countries}></MyChart>  </div>
+            <div className='home-component'>  
+            
+              <MyChart Countries={Countries}></MyChart>
+              
+              </div>
             <div className='home-component'> 
             <MyTable Countries={Countries}/></div> 
             

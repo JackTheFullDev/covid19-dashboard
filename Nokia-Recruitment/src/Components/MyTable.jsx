@@ -16,6 +16,8 @@ export const MyTable = ({Countries}) => {
   return (
     <section className="table-section">
 
+
+
 <InputText
         onInput={(e) =>
           setFilter({
