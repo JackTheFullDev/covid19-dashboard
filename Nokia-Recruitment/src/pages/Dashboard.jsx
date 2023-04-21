@@ -2,9 +2,9 @@ import { MyChart } from '../Components/MyChart'
 import { MyTable } from '../Components/MyTable'
 import { GlobalData } from '../Components/GlobalData'
 import { useState,useEffect } from 'react'
-import '../style/Home.css'
+import '../style/Dashbord.css'
 
-export const  Dashbord = () =>
+export const  Dashboard = () =>
 {
     const [apidata,setApiData]= useState()
     useEffect(()=>
@@ -18,15 +18,15 @@ export const  Dashbord = () =>
    
 
     return(
-        <section className='home-section'>
+        <section className='dashboard-section'>
             
-            <div className='home-component'>
+            <div className='dashboard-component'>
             <GlobalData Global={Global}/> 
             </div>
-            <div className='home-component'>  
+            <div className='dashboard-component'>  
               <MyChart/>
             </div>
-            <div className='home-component'> 
+            <div className='dashboard-component'> 
             <MyTable Countries={Countries}/>
             </div> 
 
