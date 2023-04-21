@@ -12,7 +12,17 @@ export const ApiContextProvider=({children})=>
        // fetch(url).then(res=>res.json()).then(data=>setApiChartData(data));
     },[])
 
-    const value={apiChartData}
+    //global & table Api
+    const [apiData,setApiData]= useState()
+    useEffect(()=>
+    {
+      const url='https://api.covid19api.com/summary';
+     // fetch(url).then(res=>res.json()).then(data=>setApiData(data));
+     
+    },[])
+   
+
+    const value={apiChartData,apiData}
 
     return <ApiContext.Provider value={value}>{children}</ApiContext.Provider>
 }
