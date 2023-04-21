@@ -7,6 +7,7 @@ import { PageNotFound } from "./pages/PageNotFound";
 import { Dashboard } from "./pages/Dashboard";
 import { Table } from "./pages/Table";
 import { ApiContextProvider } from "./Context/ApiContext";
+import { Chart } from "./pages/Chart";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/Dashbord" element={<Dashboard />}></Route>
             <Route path="/Table" element={<Table />}></Route>
+            <Route path="/Chart" element={<Chart />}></Route>
             <Route path="*" element={<PageNotFound />}></Route>
           </Routes>
         </BrowserRouter>

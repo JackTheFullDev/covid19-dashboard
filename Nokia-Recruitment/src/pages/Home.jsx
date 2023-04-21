@@ -13,7 +13,7 @@ export const Home = () => {
         <Link to="/table" className="home-component">
           <MdTableChart />
         </Link>
-        <Link to="/" className="home-component">
+        <Link to="/Chart" className="home-component">
           <BsFillBarChartLineFill />
         </Link>
         <Link to="/dashbord" className="home-component">
