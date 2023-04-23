@@ -9,7 +9,7 @@ export const ApiContextProvider=({children})=>
     useEffect(()=>
     {
         const url=`https://disease.sh/v3/covid-19/continents`
-       // fetch(url).then(res=>res.json()).then(data=>setApiChartData(data));
+        fetch(url).then(res=>res.json()).then(data=>setApiChartData(data));
     },[])
 
     //global & table Api
