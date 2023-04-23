@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <section className="home-container">
-      <h1>Welcom to Covid-19 date</h1>
+      <h1>Welcom to Covid-19 informator</h1>
       <div className="home-components-section">
         <Link to="/table" className="home-component">
           <MdTableChart />

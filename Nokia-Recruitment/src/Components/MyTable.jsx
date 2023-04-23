@@ -13,7 +13,7 @@ export const MyTable = ({ Countries }) => {
   const [filters, setFilters] = useState({
     global: { value: null, matchMode: FilterMatchMode.CONTAINS },
   });
-  
+
   return (
     <section className="table-section">
       <InputText
