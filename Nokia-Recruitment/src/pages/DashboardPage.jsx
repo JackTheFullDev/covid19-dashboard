@@ -7,7 +7,7 @@ import { ApiContext } from "../Context/ApiContext";
 import "../style/Dashbord.css";
 import { Link } from "react-router-dom";
 
-export const Dashboard = () => {
+export const DashboardPage = () => {
   const { apiData } = useContext(ApiContext);
   const { Global, Countries } = apiData || {};
 

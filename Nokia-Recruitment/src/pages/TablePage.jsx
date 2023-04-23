@@ -4,7 +4,7 @@ import { ApiContext } from "../Context/ApiContext";
 import { useContext } from "react";
 import "../style/Table.css";
 
-export const Table = () => {
+export const TablePage = () => {
   const { apiData } = useContext(ApiContext);
   const { Countries } = apiData || {};
   return (

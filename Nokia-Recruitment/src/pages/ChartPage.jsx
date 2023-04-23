@@ -2,7 +2,7 @@ import { MyChart } from "../Components/MyChart";
 import { Link } from "react-router-dom";
 import "../style/Chart.css";
 
-export const Chart = () => {
+export const ChartPage = () => {
   return (
     <section className="chart-page">
       <MyChart></MyChart>

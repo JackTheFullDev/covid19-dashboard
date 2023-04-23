@@ -14,7 +14,7 @@ export const Home = () => {
           <MdTableChart />
           <div className="table-page-content">Table</div>
         </Link>
-        <Link to="/Chart" className="home-component">
+        <Link to="/chart" className="home-component">
           <BsFillBarChartLineFill />
           <div className="chart-page-content">Chart</div>
         </Link>

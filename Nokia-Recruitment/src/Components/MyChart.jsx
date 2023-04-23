@@ -5,7 +5,7 @@ import { ApiContext } from "../Context/ApiContext";
 export const MyChart = () => {
   //api chart context
   const { apiChartData } = useContext(ApiContext);
-  console.log(apiChartData);
+ 
 
   //chart js
   const [chartData, setChartData] = useState({});
