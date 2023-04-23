@@ -14,18 +14,20 @@ export const MyTable = ({ Countries }) => {
     global: { value: null, matchMode: FilterMatchMode.CONTAINS },
   });
 
+  const handleInputSearch= (e) =>
+  {
+    setFilter({
+      global: {
+        value: e.target.value,
+        matchMode: FilterMatchMode.CONTAINS,
+      },
+    })
+  }
   return (
     <section className="table-section">
       <InputText
-        onInput={(e) =>
-          setFilter({
-            global: {
-              value: e.target.value,
-              matchMode: FilterMatchMode.CONTAINS,
-            },
-          })
-        }
         placeholder="input data"
+        onInput={handleInputSearch}
       />
       <DataTable
         className="data-table"

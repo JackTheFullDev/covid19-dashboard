@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MyTable } from "../Components/MyTable";
+import { MyTable } from "../components/MyTable";
 import { ApiContext } from "../Context/ApiContext";
 import { useContext } from "react";
 import "../style/Table.css";

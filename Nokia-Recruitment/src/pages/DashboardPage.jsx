@@ -1,6 +1,6 @@
-import { MyChart } from "../Components/MyChart";
-import { MyTable } from "../Components/MyTable";
-import { GlobalData } from "../Components/GlobalData";
+import { MyChart } from "../components/MyChart";
+import { MyTable } from "../components/MyTable";
+import { GlobalData } from "../components/GlobalData";
 import { useContext } from "react";
 import { ApiContext } from "../Context/ApiContext";
 
@@ -15,10 +15,10 @@ export const DashboardPage = () => {
     <section className="dashboard">
       <div className="dashboard-section">
         <div className="dashboard-component">
-          <GlobalData Global={Global} />
+          <GlobalData global={Global} />
         </div>
         <div className="dashboard-component">
-          <MyChart />
+          <MyChart/>
         </div>
         <div className="dashboard-component">
           <MyTable Countries={Countries} />

@@ -5,7 +5,6 @@ import { ApiContext } from "../Context/ApiContext";
 export const MyChart = () => {
   //api chart context
   const { apiChartData } = useContext(ApiContext);
- 
 
   //chart js
   const [chartData, setChartData] = useState({});
@@ -18,7 +17,6 @@ export const MyChart = () => {
       const population =
         apiChartData && apiChartData.map((data) => data.population);
       const tests = apiChartData && apiChartData.map((data) => data.tests);
-      console.log(continents);
 
       const data = {
         labels: [

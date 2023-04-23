@@ -4,34 +4,35 @@ import { GiDeathNote } from "react-icons/gi";
 import { AiOutlineCheck } from "react-icons/ai";
 import { FaExclamation } from "react-icons/fa";
 
-export const GlobalData = ({ Global }) => {
+export const GlobalData = ({ global }) => {
+  
   return (
     <div className="global-data">
       <div className="text-content">
-        <h2 id="global-date-date">{Global && Global.Date.slice(0, 10)}</h2>
+        <h2 id="global-date-date">{global && global.Date.slice(0, 10)}</h2>
         <h3>Date</h3>
       </div>
       <div className="text-content">
         <h2 id="global-new-confirmed">
-          <FaExclamation /> {Global && Global.NewConfirmed}
+          <FaExclamation /> {global && global.NewConfirmed}
         </h2>
         <h3>New Confirmed</h3>
       </div>
       <div className="text-content">
         <h2 id="global-new-deaths">
-          <GiDeathSkull /> {Global && Global.NewDeaths}
+          <GiDeathSkull /> {global && global.NewDeaths}
         </h2>
         <h3>New Deaths</h3>
       </div>
       <div className="text-content">
         <h2 id="global-total-confirmed">
-          <AiOutlineCheck /> {Global && Global.TotalConfirmed}
+          <AiOutlineCheck /> {global && global.TotalConfirmed}
         </h2>
         <h3>Total Confirmed</h3>
       </div>
       <div className="text-content">
         <h2 id="global-total-deaths">
-          <GiDeathNote /> {Global && Global.TotalDeaths}
+          <GiDeathNote /> {global && global.TotalDeaths}
         </h2>
         <h3>Total Deaths</h3>
       </div>

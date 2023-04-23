@@ -1,4 +1,4 @@
-import { MyChart } from "../Components/MyChart";
+import { MyChart } from "../components/MyChart";
 import { Link } from "react-router-dom";
 import "../style/Chart.css";
 
