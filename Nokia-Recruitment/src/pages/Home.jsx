@@ -12,6 +12,7 @@ export const Home = () => {
       <div className="home-components-section">
         <Link to="/table" className="home-component">
           <MdTableChart />
+          
         </Link>
         <Link to="/Chart" className="home-component">
           <BsFillBarChartLineFill />
