@@ -12,13 +12,15 @@ export const Home = () => {
       <div className="home-components-section">
         <Link to="/table" className="home-component">
           <MdTableChart />
-          
+          <div className="table-page-content">Table</div>
         </Link>
         <Link to="/Chart" className="home-component">
           <BsFillBarChartLineFill />
+          <div className="chart-page-content">Chart</div>
         </Link>
         <Link to="/dashbord" className="home-component">
           <MdOutlineSpaceDashboard />
+          <div className="dashboard-page-content">Dasboard</div>
         </Link>
       </div>
     </section>

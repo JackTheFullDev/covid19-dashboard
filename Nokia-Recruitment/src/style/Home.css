@@ -16,8 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    
+    position: relative;
 }
 .home-component:hover
 {
@@ -42,4 +41,25 @@
 {
     position: absolute;
     
+}
+.table-page-content,.chart-page-content,.dashboard-page-content
+{
+    background: rgba(217, 217, 217, 0.15);
+    padding: 10px;
+    min-width: 80px;
+    position: absolute;
+    border-radius: 20px;
+    display: none;
+    bottom: -50px;
+}
+.home-component:nth-child(1):hover .table-page-content
+{
+    display: block ;
+}
+.home-component:nth-child(2):hover .chart-page-content
+{
+    display: block ;
+}.home-component:nth-child(3):hover .dashboard-page-content
+{
+    display: block ;
 }
