@@ -2,7 +2,7 @@ import { MyChart } from "../components/MyChart";
 import { MyTable } from "../components/MyTable";
 import { GlobalData } from "../components/GlobalData";
 import { useContext } from "react";
-import { ApiContext } from "../Context/ApiContext";
+import { ApiContext } from "../context/ApiContext";
 
 import "../style/Dashbord.css";
 import { Link } from "react-router-dom";
