@@ -3,6 +3,8 @@ import { MyTable } from "../components/MyTable";
 import { ApiContext } from "../context/ApiContext";
 import { useContext } from "react";
 import "../style/Table.css";
+import React from "react";
+import { Suspense } from "react";
 
 export const TablePage = () => {
   const { apiData } = useContext(ApiContext);
