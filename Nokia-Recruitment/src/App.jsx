@@ -6,11 +6,13 @@ import { Home } from "./pages/Home";
 import { PageNotFound } from "./pages/PageNotFound";
 import { DashboardPage } from "./pages/DashboardPage";
 import { TablePage } from "./pages/TablePage";
-import { ApiContextProvider } from "./Context/ApiContext";
+import { ApiContextProvider } from "./context/ApiContext";
 import { ChartPage } from "./pages/ChartPage";
-
+import { QueryClientProvider,QueryClient } from "react-query";
 function App() {
+  const queryClient=new QueryClient()
   return (
+    <QueryClientProvider client={queryClient}>
     <div className="App">
       <ApiContextProvider>
         <BrowserRouter>
@@ -24,6 +26,7 @@ function App() {
         </BrowserRouter>
       </ApiContextProvider>
     </div>
+    </QueryClientProvider>
   );
 }
 

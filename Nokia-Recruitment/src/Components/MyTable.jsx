@@ -7,6 +7,7 @@ import { InputText } from "primereact/inputtext";
 import { FilterMatchMode } from "primereact/api";
 import { useState } from "react";
 import "../style/Table.css";
+import { TextField } from "@mui/material";
 
 export const MyTable = ({ Countries }) => {
   const [filter, setFilter] = useState({});
@@ -25,10 +26,11 @@ export const MyTable = ({ Countries }) => {
   }
   return (
     <section className="table-section">
-      <InputText
+      {/* <InputText
         placeholder="input data"
         onInput={handleInputSearch}
-      />
+      /> */}
+      <TextField id="filter-input" label="search..." variant="standard" onInput={handleInputSearch} /> {/* material UI */}
       <DataTable
         className="data-table"
         value={Countries}

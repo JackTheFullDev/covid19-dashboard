@@ -1,15 +1,19 @@
 import { Chart } from "primereact/chart";
 import { useState, useEffect, useContext } from "react";
-import { ApiContext } from "../Context/ApiContext";
+import { ApiContext } from "../context/ApiContext";
 
 export const MyChart = () => {
   //api chart context
   const { apiChartData } = useContext(ApiContext);
+ 
 
   //chart js
   const [chartData, setChartData] = useState({});
   const [chartOptions, setChartOptions] = useState({});
 
+ console.log(apiChartData)
+
+  
   useEffect(() => {
     if (apiChartData.length > 0) {
       const continents =

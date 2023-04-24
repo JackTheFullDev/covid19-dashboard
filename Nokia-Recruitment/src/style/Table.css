@@ -47,3 +47,17 @@
     color: white;
     transition: .3s ease;
  }
+ 
+ .MuiInput-input
+ {
+    color: white!important;
+ }
+label.Mui-focused {
+    color:  #6a9cffcb!important;
+  }
+  
+  .MuiInput-underline:after {
+    border-bottom-color: #6a9cffcb!important;
+  }
+  
+ 
