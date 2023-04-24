@@ -9,7 +9,7 @@ import { LoadData } from "./LoadData";
 export const GlobalData = ({ global }) => {
   return (
     <div className="global-data">
-      {!global ? (
+      {global ? (
         <> 
           <div className="text-content">
             <h2 id="global-date-date">{global.Date.slice(0, 10)}</h2>

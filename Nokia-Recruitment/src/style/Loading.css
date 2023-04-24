@@ -4,6 +4,8 @@
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   color: rgba(241, 238, 238, 0.856);
+  display: flex;
+  justify-content: center;
 }
 @keyframes spin {
   from {

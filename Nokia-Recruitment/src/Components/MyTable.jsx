@@ -15,22 +15,23 @@ export const MyTable = ({ Countries }) => {
     global: { value: null, matchMode: FilterMatchMode.CONTAINS },
   });
 
-  const handleInputSearch= (e) =>
-  {
+  const handleInputSearch = (e) => {
     setFilter({
       global: {
         value: e.target.value,
         matchMode: FilterMatchMode.CONTAINS,
       },
-    })
-  }
+    });
+  };
   return (
     <section className="table-section">
-      {/* <InputText
-        placeholder="input data"
+      <TextField
+        id="filter-input"
+        label="search..."
+        variant="standard"
         onInput={handleInputSearch}
-      /> */}
-      <TextField id="filter-input" label="search..." variant="standard" onInput={handleInputSearch} /> {/* material UI */}
+      />{" "}
+      {/* material UI */}
       <DataTable
         className="data-table"
         value={Countries}
