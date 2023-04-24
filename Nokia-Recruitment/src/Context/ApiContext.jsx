@@ -25,12 +25,24 @@ export const ApiContextProvider = ({ children }) => {
 
   //global & table Api
   const [apiData, setApiData] = useState();
-  useEffect(() => {
-    const url = "https://api.covid19api.com/summary";
-    fetch(url)
+  // useEffect(() => {
+  //   const url = "https://api.covid19api.com/summary";
+  //   fetch(url)
+  //     .then((res) => res.json())
+  //     .then((data) => setApiData(data));
+  // }, []);
+
+  const {isLoading:globalIsLoading,data:globalData}= useQuery("global-api",()=>
+  {
+    const url ="https://api.covid19api.com/summary";
+   return fetch(url)
       .then((res) => res.json())
       .then((data) => setApiData(data));
-  }, []);
+      
+  })
+
+
+
 
   const value = { apiChartData, apiData ,chartIsLoading};
 
