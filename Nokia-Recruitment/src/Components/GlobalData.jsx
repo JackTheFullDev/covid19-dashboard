@@ -6,6 +6,7 @@ import { FaExclamation } from "react-icons/fa";
 
 export const GlobalData = ({ global }) => {
   
+  
   return (
     <div className="global-data">
       <div className="text-content">

@@ -35,16 +35,19 @@ export const ApiContextProvider = ({ children }) => {
   const {isLoading:globalIsLoading,data:globalData}= useQuery("global-api",()=>
   {
     const url ="https://api.covid19api.com/summary";
-   return fetch(url)
+    return fetch(url)
       .then((res) => res.json())
-      .then((data) => setApiData(data));
-      
+      .then((data) => {
+        setApiData(data);
+        return data; // return the fetched data
+      });
+    
   })
 
 
 
 
-  const value = { apiChartData, apiData ,chartIsLoading};
+  const value = { apiChartData, apiData ,chartIsLoading,globalIsLoading,globalData};
 
   return <ApiContext.Provider value={value}>{children}</ApiContext.Provider>;
 };
