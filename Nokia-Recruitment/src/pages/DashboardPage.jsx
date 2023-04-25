@@ -6,6 +6,7 @@ import { ApiContext } from "../context/ApiContext";
 
 import "../style/Dashbord.css";
 import { Link } from "react-router-dom";
+import { DashboardComponent } from "../components/DashboardComponent";
 
 export const DashboardPage = () => {
   const { apiData } = useContext(ApiContext);
@@ -14,16 +15,15 @@ export const DashboardPage = () => {
   return (
     <section className="dashboard">
       <div className="dashboard-section">
-        <div className="dashboard-component">
-          <GlobalData global={Global} />
-        </div>
-        <div className="dashboard-component">
-          <MyChart />
-        </div>
-        <div className="dashboard-component">
-          <MyTable Countries={Countries} />
-        </div>
+        <DashboardComponent
+          comp={<GlobalData global={Global} />}
+        ></DashboardComponent>
+        <DashboardComponent comp={<MyChart />}></DashboardComponent>
+        <DashboardComponent
+          comp={<MyTable Countries={Countries} />}
+        ></DashboardComponent>
       </div>
+
       <Link to="/">Back to Home</Link>
     </section>
   );
