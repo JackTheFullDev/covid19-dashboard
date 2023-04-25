@@ -3,7 +3,6 @@ import { Column } from "primereact/column";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 //filter
-import { InputText } from "primereact/inputtext";
 import { FilterMatchMode } from "primereact/api";
 import { useEffect, useState } from "react";
 import "../style/Table.css";
@@ -14,6 +13,7 @@ export const MyTable = ({ Countries }) => {
   const [filters, setFilters] = useState({
     global: { value: null, matchMode: FilterMatchMode.CONTAINS },
   });
+  const [localData, setLocalData] = useState("");
 
   useEffect(() => {
     const filterData = JSON.parse(localStorage.getItem("newFilter"));
@@ -28,7 +28,6 @@ export const MyTable = ({ Countries }) => {
     }
   }, []);
 
-  const [localData, setLocalData] = useState("");
   const handleInputSearch = (e) => {
     const newFilter = e.target.value;
     localStorage.setItem("newFilter", JSON.stringify(newFilter));
@@ -39,8 +38,6 @@ export const MyTable = ({ Countries }) => {
         matchMode: FilterMatchMode.CONTAINS,
       },
     });
-
-    console.log(newFilter);
   };
   return (
     <section className="table-section">
