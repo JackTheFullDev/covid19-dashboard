@@ -1,5 +1,6 @@
 Covid 19 App!
-![myapp](https://user-images.githubusercontent.com/121553780/234425243-746bfa07-be55-4ecf-8195-5ebe9aff5326.JPG)
+![myapp](https://user-images.githubusercontent.com/121553780/234426099-83bc6f86-7ec7-4a36-bb1d-8d12f5820881.JPG)
+
 
 The covid19 statistics application includes:
 -Home Page
