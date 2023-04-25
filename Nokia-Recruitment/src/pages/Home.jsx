@@ -13,7 +13,7 @@ export const Home = () => {
       <h1 style={{ color: "white" }}>
         Welcom to your Covid-19 daily{" "}
         <Typed
-          strings={["Informator", "Dashboard", "Statisitc", "Knowladge"]}
+          strings={["Information", "Dashboard", "Statisitcs", "Knowledge"]}
           typeSpeed={120}
           backSpeed={100}
           loop
