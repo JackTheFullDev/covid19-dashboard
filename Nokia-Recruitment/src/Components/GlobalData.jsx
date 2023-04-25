@@ -5,12 +5,11 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { FaExclamation } from "react-icons/fa";
 import { LoadData } from "./LoadData";
 
-
 export const GlobalData = ({ global }) => {
   return (
     <div className="global-data">
       {global ? (
-        <> 
+        <>
           <div className="text-content">
             <h2 id="global-date-date">{global.Date.slice(0, 10)}</h2>
             <h3>Date</h3>
@@ -41,7 +40,7 @@ export const GlobalData = ({ global }) => {
           </div>
         </>
       ) : (
-      <LoadData/>
+        <LoadData />
       )}
     </div>
   );

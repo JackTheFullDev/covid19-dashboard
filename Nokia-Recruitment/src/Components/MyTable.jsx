@@ -30,7 +30,7 @@ export const MyTable = ({ Countries }) => {
         label="search..."
         variant="standard"
         onInput={handleInputSearch}
-      />{" "}
+      />
       {/* material UI */}
       <DataTable
         className="data-table"
@@ -39,7 +39,6 @@ export const MyTable = ({ Countries }) => {
         filters={filter}
         paginator
         rows={10}
-        // filterDisplay="row"
         emptyMessage="No country found."
       >
         <Column field="Country" header="Country Name" sortable></Column>

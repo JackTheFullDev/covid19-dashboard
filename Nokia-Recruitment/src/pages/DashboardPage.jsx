@@ -18,7 +18,7 @@ export const DashboardPage = () => {
           <GlobalData global={Global} />
         </div>
         <div className="dashboard-component">
-          <MyChart/>
+          <MyChart />
         </div>
         <div className="dashboard-component">
           <MyTable Countries={Countries} />
