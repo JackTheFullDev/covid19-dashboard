@@ -4,6 +4,7 @@ import { GiDeathNote } from "react-icons/gi";
 import { AiOutlineCheck } from "react-icons/ai";
 import { FaExclamation } from "react-icons/fa";
 import { LoadData } from "./LoadData";
+import { GlobalDateComponent } from "./GlobalDateComponent ";
 
 export const GlobalData = ({ global }) => {
   return (
@@ -14,30 +15,30 @@ export const GlobalData = ({ global }) => {
             <h2 id="global-date-date">{global.Date.slice(0, 10)}</h2>
             <h3>Date</h3>
           </div>
-          <div className="text-content">
-            <h2 id="global-new-confirmed">
-              <FaExclamation /> {global.NewConfirmed}
-            </h2>
-            <h3>New Confirmed</h3>
-          </div>
-          <div className="text-content">
-            <h2 id="global-new-deaths">
-              <GiDeathSkull /> {global.NewDeaths}
-            </h2>
-            <h3>New Deaths</h3>
-          </div>
-          <div className="text-content">
-            <h2 id="global-total-confirmed">
-              <AiOutlineCheck /> {global.TotalConfirmed}
-            </h2>
-            <h3>Total Confirmed</h3>
-          </div>
-          <div className="text-content">
-            <h2 id="global-total-deaths">
-              <GiDeathNote /> {global.TotalDeaths}
-            </h2>
-            <h3>Total Deaths</h3>
-          </div>
+          <GlobalDateComponent
+            icon={<FaExclamation />}
+            id={"global-new-confirmed"}
+            data={global.NewConfirmed}
+            text={"New Confirmed"}
+          />
+          <GlobalDateComponent
+            icon={<GiDeathSkull />}
+            id={"global-new-deaths"}
+            data={global.NewConfirmed}
+            text={"New Deaths"}
+          />
+          <GlobalDateComponent
+            icon={<AiOutlineCheck />}
+            id={"global-total-confirmed"}
+            data={global.NewConfirmed}
+            text={"Total Confirmed"}
+          />
+          <GlobalDateComponent
+            icon={<GiDeathNote />}
+            id={"global-total-deaths"}
+            data={global.NewConfirmed}
+            text={"Total Deaths"}
+          />
         </>
       ) : (
         <LoadData />
